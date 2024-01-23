@@ -11,3 +11,30 @@ body {
     width: 30%;
     background-color: rgb(196, 134, 134);
 }
+
+#button1 {
+    position: relative;
+    top: -87px;
+    left: -180px;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #00e4b2;
+    border: 1px solid #000000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+#button2 {
+    position: relative;
+    top: -159px;
+    left: -100px;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #00e4b2;
+    border: 1px solid #000000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
