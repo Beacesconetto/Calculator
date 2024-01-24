@@ -8,33 +8,44 @@ body {
 
 #content {
     height: 80%;
-    width: 30%;
+    width: 32%;
     background-color: rgb(196, 134, 134);
 }
 
-#button1 {
-    position: relative;
-    top: -87px;
-    left: -180px;
-    padding: 25px;
+.button {
+    width: 7%;
+    height: 10%;
     font-size: 20px;
     text-align: center;
     background-color: #00e4b2;
-    border: 1px solid #000000;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
-    
 }
-#button2 {
+
+.btn-1 {
     position: relative;
-    top: -159px;
-    left: -100px;
-    padding: 25px;
-    font-size: 20px;
-    text-align: center;
-    background-color: #00e4b2;
-    border: 1px solid #000000;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    
+    top: -60px;
+    left: -185px;
 }
+
+ .btn-2 {
+    position: relative;
+    top: -110px;
+    left: -70px;
+}
+
+
+.btn-3 {
+    position: relative;
+    top: -160px;
+    left: 45px;
+}
+
+.btn-{
+    position: relative;
+    top: -210px;
+    left: 160px;
+
+}
+
+
