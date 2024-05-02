@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="buttoncalc.js"></script>
+    <script src="./buttoncalc.js"></script>
     <title>Calculadora</title>
 </head>
 <body>
@@ -13,30 +13,30 @@
 <div id="display"><span id="displayinfo"></span></div>
 <div id="buttonGrid">
 
-    <button class="button operators" value="(">(</button>
+    <button class="button operators onclick="digitNumbe" value="(">(</button>
     <button class="button operators" value=")">)</button>
-    <button class="button" onclick="calculator.deleteLastDigit()">DEL</button>
+    <button class="button" onclick="clearLast()">DEL</button>
     
-    <button class="button operators" value="/">÷</button>
+    <button class="button operators" onclick="digitNumber('/')" value="/">÷</button>
 
-    <button class="button numbers" value="1">1</button>
-    <button class="button numbers" value="2">2</button>
-    <button class="button numbers" value="3">3</button>
-    <button class="button operators" value="*">x</button>
+    <button class="button numbers" onclick="digitNumber('1')">1</button>
+    <button class="button numbers" onclick="digitNumber('2')">2</button>
+    <button class="button numbers" onclick="digitNumber('3')">3</button>
+    <button class="button operators" onclick="digitNumber('*')" value="*">x</button>
 
-    <button class="button numbers" value="4">4</button>
-    <button class="button numbers" value="5">5</button>
-    <button class="button numbers" value="6">6</button>
-    <button class="button operators" value="-">-</button>
+    <button class="button numbers" onclick="digitNumber('4')">4</button>
+    <button class="button numbers" onclick="digitNumber('5')">5</button>
+    <button class="button numbers" onclick="digitNumber('6')">6</button>
+    <button class="button operators" onclick="digitNumber('-')">-</button>
 
-    <button class="button numbers" value="7">7</button>
-    <button class="button numbers" value="8">8</button>
-    <button class="button numbers" value="9">9</button>
-    <button class="button operators" value="+">+</button>
+    <button class="button numbers" onclick="digitNumber('7')">7</button>
+    <button class="button numbers" onclick="digitNumber('8')">8</button>
+    <button class="button numbers" onclick="digitNumber('9')">9</button>
+    <button class="button operators" onclick="digitNumber('+')">+</button>
         
-    <button class="button-TurnOn" onclick="calculator.TurnOn()">ON</button>
-    <button class="button numbers" value="0">0</button>
-    <button class="button numbers" value=".">,</button>
+    <button class="button-TurnOn" onclick="clearAll()">C</button>
+    <button class="button numbers" onclick="digitNumber('0')">0</button>
+    <button class="button numbers" value=".">.</button>
 
     <button class="button-result" onclick="calculator.handleOperations()">=</button>
 

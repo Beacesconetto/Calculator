@@ -2,19 +2,35 @@ const calculator = {
     handleOperations: function() {
         const display = document.getElementById('displayinfo');
         let expression = display.innerText;
-
-
-        console.log("Expressão:", expression); // Verifica se a expressão está correta
-
-         // Verifique se a expressão não está vazia antes de avaliá-la
          if (expression !== "") {
             const result = eval(expression);
-
-            console.log("Resultado:", result); // Verifica o resultado retornado por eval()
-
             display.innerText = result;
-        } else {
-            console.log("Expressão vazia. Nenhum cálculo a ser feito.");
-        }
+        } 
     }
-};
+
+   }
+
+   function digitNumber(value) {
+    let display = document.getElementById("displayinfo");
+    display.textContent += value 
+   }
+
+   function clearLast() {
+    let display = document.getElementById("displayinfo");
+    let delet = display.textContent
+    display.textContent = delet.slice(0,-1)
+   }
+   function clearAll() {
+    let display = document.getElementById("displayinfo");
+    display.textContent = ""
+   }
+
+   document.addEventListener("keydown",(event)=>{
+    if (event.key === "Delete") {
+        clearAll() 
+    }else if (event.key === "=" || event.key === "Enter") {
+        calculator.handleOperations()
+    } else {
+        digitNumber(event.key)
+    } 
+   })
