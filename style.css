@@ -1,0 +1,53 @@
+#content {
+    position:relative;
+    width: 250px;
+    height: 400px;  
+    background-color: rgb(228, 220, 112);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#display{
+    width: 90%;
+    height: 50px;
+    border: 2px solid black;
+    margin: 0 auto;
+    background-color: #d1d1d1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 36px;            
+}
+
+#displayinfo {
+    padding: 0 10px;
+}
+
+#buttonGrid{
+    border-top: 1px solid darkgray;
+    margin: 20px auto;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    vertical-align: middle
+}
+
+.button, .button-TurnOn, .button-result {
+    text-align: center;
+    width: 75%;
+    height: 40px;
+    margin: 0 auto;
+    background-color: lightgray;
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.button-result{
+    background-color: rgb(224, 150, 66)
+}
+
+h1 {
+    text-align: center;
+}
